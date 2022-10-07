@@ -1,0 +1,45 @@
+### GET 
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY1MTU1Mjk2LCJpYXQiOjE2NjUxNTQ5OTYsImp0aSI6ImVmYTJlOTI4MWI0MjQyMGQ5NGFhYTk4NjE0ZDhkODZkIiwidXNlcl9pZCI6MX0.wKqo4u3kzX2NdBoFmwS4cfebpMKCDgtlUejXo-qM0fw
+
+GET http://localhost:8000/api/tasks/3
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+### GET 2
+GET http://localhost:8000/api/tasks/2
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### POST ADD 4
+POST http://localhost:8000/api/tasks/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+	"id": 4,
+	"title": "create app4",
+	"description": "create app4 ok then 4",
+	"date_created": "",
+	"complete": true
+}
+
+### GET ALL WITH JWT
+GET http://localhost:8000/api/tasks
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### GET ALL NO JWT
+GET http://localhost:8000/api/tasks
+Content-Type: application/json
+
+### POST JWT LOGIN
+POST http://localhost:8000/api/token/
+Content-Type: application/json
+
+{ "username": "admin", "password": "admin" }
+
+### POST REFRESH
+POST http://localhost:8000/api/token/refresh/
+Content-Type: application/json
+
+{"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NTI0MTY2NywiaWF0IjoxNjY1MTU1MjY3LCJqdGkiOiI3MjMzOGQxMWFiYTE0ODJhODIyNjU3YzBhOTZkZTc3YSIsInVzZXJfaWQiOjF9.OHd-XGWtF6qoNcFaJb4c6xeRImbSChDk0y1-6NUiDSI"}
