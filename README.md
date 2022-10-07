@@ -1,6 +1,7 @@
-STACK
+#  django-rest-jwt
 
 https://stackpython.co/tutorial/django-rest-framework-api-python
+
 https://dev.to/biplov/function-based-views-vs-class-based-views-django-20ak
 
 ## env manage
@@ -356,4 +357,13 @@ SIMPLE_JWT = {
 }
 ````
 
+## CACHE 
 
+````
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+    }
+}
+````
