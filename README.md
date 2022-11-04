@@ -14,7 +14,7 @@ mkdir restframework
 cd restframework
 
 # สร้าง virtual environment ชื่อว่า env
-python -m venv env
+virtualenv env
 
 # Activate (เรียกใช้งาน) virtual environment (Windows)
 env\Scripts\activate
