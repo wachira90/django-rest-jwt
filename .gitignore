@@ -1,0 +1,5 @@
+appmain/api/__pycache__
+appmain/api/migrations
+appmain/appmain/__pycache__
+env/
+!.gitignore
