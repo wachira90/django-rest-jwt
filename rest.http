@@ -1,9 +1,10 @@
 ### GET 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY1MTU1Mjk2LCJpYXQiOjE2NjUxNTQ5OTYsImp0aSI6ImVmYTJlOTI4MWI0MjQyMGQ5NGFhYTk4NjE0ZDhkODZkIiwidXNlcl9pZCI6MX0.wKqo4u3kzX2NdBoFmwS4cfebpMKCDgtlUejXo-qM0fw
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3NTgzMzQxLCJpYXQiOjE2Njc1ODMwNDEsImp0aSI6ImNmOGY4YWUwY2M5OTQwMjViZjczNTU5M2UyNWZiMjAyIiwidXNlcl9pZCI6MX0.BEKRF9Nt7D89Lh3i0AqlHYlqpu9l36gk49qrvjBiBz4
 
 GET http://localhost:8000/api/tasks/3
 Content-Type: application/json
-Authorization: Basic YWRtaW46YWRtaW4=
+Authorization: Bearer {{token}}
+# Authorization: Basic YWRtaW46YWRtaW4=
 
 ### GET 2
 GET http://localhost:8000/api/tasks/2
